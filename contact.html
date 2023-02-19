@@ -25,20 +25,33 @@
             <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
         </ul>
     </nav>
-    
-    <h1>Contact Us</h1>
-    <form id="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <div id="message-sent" class="hidden">
-      <p>Thank you for your message!</p>
-    </div>
+
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      
+            <label for="phone">Mobile Number</label>
+            <input type="tel" name="mobilenumber"  id="contact" placeholder="Your mobile number... with country code (+91-956xxxxx74)x" required maxlength="14">
+          <!-- <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+      
+          <label for="subject">Subject</label required>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
     <footer>
         <div class="containers">
             <p>&copy; 2023 All rights reserved by DGroup's (Vipul Dalal)</p>
