@@ -23,11 +23,11 @@ body{
 }
 
 .about-text{
-    width: 850px;
+    width: 550px;
 }
 
 .main{
-    width: 1330px;
+    width: 1130px;
     max-width: 95%;
     margin: 0 auto;
     margin-bottom: 3.2%;
@@ -52,10 +52,6 @@ body{
 }
 
 span{
-    color: #f9004d;
-}
-
-strong{
     color: #f9004d;
 }
 
