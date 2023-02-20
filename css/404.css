@@ -21,14 +21,14 @@ body{
     cursor: pointer;
     font-weight: 900;
     letter-spacing: 20px;
-    background: url(../images/sebastian-svenson.jpg) no-repeat center;
+    background: url(../images/sebastian-svenson.jpg) center no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     transition: 0.4s ease-in;
 }
 
 .container h1:hover{
-    background: url(../images/dg-tran.jpeg) no-repeat center;
+    background: url(../images/dg-tran.jpeg) center no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     transition: 0.4s ease-out;
