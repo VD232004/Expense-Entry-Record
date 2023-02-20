@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/common.css">
     <title>Contacts | DGroup's</title>
 </head>
 <body>
@@ -28,7 +29,6 @@
 
     <div class="container">
         <form action="action_page.php">
-      
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
       
@@ -36,7 +36,7 @@
           <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
       
             <label for="phone">Mobile Number</label>
-            <input type="tel" name="mobilenumber"  id="contact" placeholder="Your mobile number... with country code (+91-956xxxxx74)" required maxlength="14">
+            <input type="tel" name="phone"  id="phone" placeholder="Your mobile number... with country code (+91-956xxxxx74)" required maxlength="14">
           <!-- <label for="country">Country</label>
           <select id="country" name="country" required>
             <option value="australia">Australia</option>
@@ -48,7 +48,6 @@
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
           <input type="submit" value="Submit">
-      
         </form>
       </div>
 
@@ -57,5 +56,6 @@
             <p>&copy; 2023 All rights reserved by DGroup's (Vipul Dalal)</p>
         </div>
     </footer>
+    <script src="js/contact.js"></script>
 </body>
 </html>

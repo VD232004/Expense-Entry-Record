@@ -214,11 +214,10 @@ button.delete-button {
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  
-  /* Style the button that opens the pop-up */
-  .addbtn{
+/* Style the button that opens the pop-up */
+.addbtn{
     position: relative;
     text-align: center;
     justify-content: center;
@@ -249,78 +248,30 @@ button.delete-button {
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.8);
 }
 
-/* #myButton {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  } */
-  
-  /* Style the pop-up */
-  .popUp {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+.addbtn i {
+    font-size: 20px;
+    /* margin-right: 10px; */
+}
+.addbtn span {
+    display: none;
+    position: absolute;
+    top: 100%;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    padding: 20px;
-    border: 2px solid #888;
-    border-radius: 10px; 
-    width: 450px; /* Width of the pop-up */
-    background-color: rgba(0,0,0,0.4); /* Black with opacity */
-    overflow: auto; /* Enable scroll if needed */
-  }
-  
-  /* Style the pop-up content */
-  .popUp-content {
-    background-color: rgb(233, 233, 233);
-    margin: 1% auto; /* 15% from the top and centered */
-    padding: 30px;
-    border: 2px solid #888;
-    border-radius: 5px;
-    width: 100%; /* 100% width */
-  }
-
-  .popUp-content p{
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #fff;
+    font-size: 15px;
     color: #333;
-    font-family: 'Robot', cursive;
-    cursor: pointer;
-    transition: 0.2s linear;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-.popUp-content p:hover, p:focus{
-    color: rgb(214, 125, 52);
+.addbtn:hover span {
+    display: block;
 }
 
-  
-  /* Style the close button */
-  .popUp-close {
-    color: #929292;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .popUp-close:hover,
-  .popUp-close:focus {
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
-  /*========================================  */
-
-/* .container form{
-    position: relative;
-    margin-top: 16px;
-    min-height: 290px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 -1px 20px rgb(255, 255, 255);
-    border-radius: 5px;
-} */
+/*========================================  */
 
 .container form .details{
     margin-top: 10px;
@@ -432,102 +383,6 @@ button.delete-button {
 .box, .box1, .box2, .box3, .box4{
     display: none;
 }
-
-
-/* Style the button that opens the pop-up */
-.addbtn{
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    height: 45px;
-    max-width: 40px;
-    width: 100%;
-    border-radius: 5px;
-    margin-left: 90%;
-    border: none;
-	color: #2482ce;
-	background-color: rgba(0,0,0,0.7);
-	font-size: 30px;
-    font-weight: 600;
-	text-decoration: none;
-	cursor: pointer;
-	font-family: 'Audiowide';
-    border: 1.5px solid #2482ce;
-	text-transform: uppercase;
-    transition: 0.5s ease-in;
-	transform: translate(15%, -20%);
-}
-
-.addbtn:hover{
-    background-color: #2482ce;
-    color: #fff;
-    font-weight: 600;
-    border: 1.5px solid #f2f2f2c5;
-    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.8);
-}
-
-/* #myButton {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  } */
-  
-  /* Style the pop-up */
-  .popUp {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    padding: 20px;
-    border: 2px solid #888;
-    border-radius: 10px; 
-    max-width: 450px; /* Width of the pop-up */
-    width: 100%;
-    background-color: rgba(0,0,0,0.4); /* Black with opacity */
-    overflow: auto; /* Enable scroll if needed */
-  }
-  
-  /* Style the pop-up content */
-  .popUp-content {
-    background-color: rgb(233, 233, 233);
-    margin: 1% auto; /* 15% from the top and centered */
-    padding: 30px;
-    border: 2px solid #888;
-    border-radius: 5px;
-    width: 100%; /* 100% width */
-  }
-
-  .popUp-content p{
-    color: #333;
-    font-family: 'Robot', cursive;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.popUp-content p:hover, p:focus{
-    color: rgb(214, 125, 52);
-}
-
-  
-  /* Style the close button */
-  .popUp-close {
-    color: #929292;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .popUp-close:hover,
-  .popUp-close:focus {
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
 
   /* Media Query */
 
