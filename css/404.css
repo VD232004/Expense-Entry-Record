@@ -24,13 +24,14 @@ body{
     background: url(../images/sebastian-svenson.jpg) no-repeat center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in;
 }
 
 .container h1:hover{
     background: url(../images/dg-tran.jpeg) no-repeat center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    transition: 0.4s ease-out;
 }
 
 .container a{
