@@ -90,7 +90,7 @@ footer .containers p{
 
 .container {
     max-width: 800px;
-    margin:8% auto;
+    margin: 8% auto;
     padding: 20px;
     background-color: #dfdfdf;
     border-radius: 5px;
@@ -233,7 +233,6 @@ button.delete-button {
     font-weight: 600;
 	text-decoration: none;
 	cursor: pointer;
-	font-family: 'Audiowide';
     border: 1.5px solid #2482ce;
 	text-transform: uppercase;
     transition: 0.5s ease-in;

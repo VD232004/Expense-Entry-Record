@@ -17,7 +17,7 @@ body{
 
 .container h1{
     font-size: 160px;
-    margin: 0 22%;
+    margin: 0;
     cursor: pointer;
     font-weight: 900;
     letter-spacing: 20px;
@@ -48,17 +48,4 @@ body{
 
 .container a:hover{
     background: #e55039;
-}
-
-.container h2{
-    margin: 0 42%;
-    cursor: pointer;
-}
-
-.container p{
-    margin: 1% 40%;
-    cursor: pointer;
-    text-decoration: none;
-    color: #343434;
-    font-size: 20px;
 }
