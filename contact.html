@@ -48,6 +48,12 @@
             <p>&copy; 2023 All rights reserved by DGroup's (Vipul Dalal)</p>
         </div>
     </footer>
-    <script src="js/contact.js"></script>
+    <script>
+      window.onbeforeunload = () => {
+        for(const form of document.getElementsByTagName('form')) {
+          form.reset();
+        }
+      }
+    </script>
 </body>
 </html>
