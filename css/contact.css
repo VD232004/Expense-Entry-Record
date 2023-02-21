@@ -1,106 +1,133 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4) url(../images/svg) no-repeat center;
-    backdrop-filter: blur(2px);
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea, input[type=tel]{
-    width: 100%;
-    /* Full width */
-    padding: 15px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
     box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 20px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    margin-left: 25px;
-    padding: 15px 25px;
+section{
+    padding: 40px 15%;
+}
+
+.contact{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-img img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form span{
+    color: #f9004d;
+}
+
+.contact-form p{
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 17px;
     border: none;
-    border-radius: 4px;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .btn{
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: 0.20s ease;
+}
+
+.contact-form form .btn:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    transition: scale(1.1);
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    /* max-width: 800px; */
+footer{
     width: 100%;
-    height: 815px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #333;
     padding: 20px;
-    /* margin: 5% 25%; */
 }
 
-
-/* Media Query */
-
-@media only screen and (max-width:600) {
-    form {
-        max-width: 90%;
+@media (max-width:1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
     }
 
-    /* Style inputs with type="text", select elements and textareas */
-    input[type=text], select, textarea {
+    .contact-form h1{
+        font-size: 50px;
+    }
+
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1090px){
+    .contact{
+        gap: 2rem;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form{
+        order: 2;
+    }
+
+    .contact-img img{
+        max-width: 100%;
         width: 100%;
-        /* Full width */
-        padding: 12px;
-        /* Some padding */
-        border: 1px solid #ccc;
-        /* Gray border */
-        border-radius: 4px;
-        /* Rounded borders */
-        box-sizing: border-box;
-        /* Make sure that padding and width stays in place */
-        margin-top: 6px;
-        /* Add a top margin */
-        margin-bottom: 16px;
-        /* Bottom margin */
-        resize: vertical
-            /* Allow the user to vertically resize the textarea (not horizontally) */
-    }
-
-    /* Style the submit button with a specific background color etc */
-    input[type=submit] {
-        background-color: #04AA6D;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-        background-color: #45a049;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
