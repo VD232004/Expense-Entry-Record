@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-section{
+section {
     padding: 40px 15%;
 }
 
-.contact{
+.contact {
     background: #101010;
     height: 100%;
     width: 100%;
@@ -20,24 +20,24 @@ section{
     grid-gap: 6rem;
 }
 
-.contact-img img{
+.contact-img img {
     max-width: 100%;
     width: 720px;
     height: auto;
     border-radius: 10px;
 }
 
-.contact-form h1{
+.contact-form h1 {
     font-size: 80px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.contact-form span{
+.contact-form span {
     color: #f9004d;
 }
 
-.contact-form p{
+.contact-form p {
     color: #c6c9d8bf;
     letter-spacing: 1px;
     line-height: 26px;
@@ -45,11 +45,12 @@ section{
     margin-bottom: 3.8rem;
 }
 
-.contact-form form{
+.contact-form form {
     position: relative;
 }
 
-.contact-form form input, form textarea{
+.contact-form form input,
+form textarea {
     width: 100%;
     padding: 17px;
     border: none;
@@ -62,12 +63,12 @@ section{
 
 
 
-.contact-form textarea{
+.contact-form textarea {
     resize: none;
     height: 200px;
 }
 
-.contact-form form .btn{
+.contact-form form .btn {
     display: inline-block;
     background: #f9004d;
     font-size: 1.1rem;
@@ -80,51 +81,51 @@ section{
     transition: 0.20s ease;
 }
 
-.contact-form form .btn:hover{
+.contact-form form .btn:hover {
     background: transparent;
     border: 2px solid #f9004d;
     transition: scale(1.1);
     cursor: pointer;
 }
 
-footer{
+footer {
     width: 100%;
     background-color: #333;
     padding: 20px;
 }
 
-@media (max-width:1570px){
-    section{
+@media (max-width:1570px) {
+    section {
         padding: 80px 3%;
         transition: .2s;
     }
 
-    .contact-form h1{
+    .contact-form h1 {
         font-size: 50px;
     }
 
-    .contact-form p{
+    .contact-form p {
         margin-bottom: 3rem;
     }
 }
 
-@media (max-width: 1090px){
-    .contact{
+@media (max-width: 1090px) {
+    .contact {
         gap: 2rem;
         transition: .3s;
     }
 }
 
-@media (max-width: 1000px){
-    .contact{
+@media (max-width: 1000px) {
+    .contact {
         grid-template-columns: 1fr;
     }
 
-    .contact-form{
+    .contact-form {
         order: 2;
     }
 
-    .contact-img img{
+    .contact-img img {
         max-width: 100%;
         width: 100%;
         height: auto;

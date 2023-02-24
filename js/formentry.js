@@ -436,7 +436,8 @@ function SubForm() {
 
 // Get the pop-up and button elements
 var popUp = document.getElementById('myPopUp')
-var button = document.getElementById('myButton')
+// To activate the popup un-comment it this "var button" line  
+var button = document.getElementById('myButton')  
 
 // Get the close button element
 var closeButton = document.getElementsByClassName('popUp-close')[0]
@@ -460,31 +461,31 @@ window.onclick = function (event) {
 
 //Create multiple form
 
-// function addForm() {
-//     // Get the form container element
-//     var container = document.getElementById("details");
+function addForm() {
+    // Get the form container element
+    var container = document.getElementById("details");
 
-//     // Get the form to copy
-//     var formToCopy = document.querySelector('.fields');
+    // Get the form to copy
+    var formToCopy = document.querySelector('.fields');
 
-//     // Clone the form and its contents
-//     var clonedForm = formToCopy.cloneNode(true);
+    // Clone the form and its contents
+    var clonedForm = formToCopy.cloneNode(true);
 
-//     // Add a "delete" button to the cloned form
-//     var deleteButton = document.createElement("button");
-//     deleteButton.innerHTML = "Delete";
-//     deleteButton.className = "delete-button";
-//     deleteButton.setAttribute("onclick", "deleteForm(this)");
-//     clonedForm.appendChild(deleteButton);
+    // Add a "delete" button to the cloned form
+    var deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "Delete";
+    deleteButton.className = "delete-button";
+    deleteButton.setAttribute("onclick", "deleteForm(this)");
+    clonedForm.appendChild(deleteButton);
 
-//     // Add the cloned form to the container
-//     container.appendChild(clonedForm);
-//   }
+    // Add the cloned form to the container
+    container.appendChild(clonedForm);
+  }
 
-//   function deleteForm(button) {
-//     // Remove the parent element (the entire form)
-//     button.parentNode.remove();
-//   }
+  function deleteForm(button) {
+    // Remove the parent element (the entire form)
+    button.parentNode.remove();
+  }
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -496,14 +497,14 @@ function myFunction() {
   }
 }
 
-//logoutbtn
-document.getElementById('logout-button').addEventListener('click', function () {
-  var result = confirm('Are you sure you want to logout?')
-  if (result) {
-    // Clear session or token
-    localStorage.removeItem('token')
+//logoutbtn if your website have login page then you can customize it according to you
+// document.getElementById('logout-button').addEventListener('click', function () {
+//   var result = confirm('Are you sure you want to logout?')
+//   if (result) {
+//     // Clear session or token
+//     localStorage.removeItem('token')
 
-    // Redirect to login page
-    window.location.href = 'https://vd232004.github.io/Expenses-Record-Web-App/'
-  }
-})
+//     // Redirect to login page
+//     window.location.href = 'https://example.com'
+//   }
+// })

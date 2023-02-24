@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "montserrat", sans-serif;
@@ -6,7 +6,7 @@ body{
     background: linear-gradient(125deg, #6a89cc, #b8e994);
 }
 
-.container{
+.container {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -15,7 +15,7 @@ body{
     color: #343434;
 }
 
-.container h1{
+.container h1 {
     font-size: 160px;
     margin: 0;
     cursor: pointer;
@@ -27,14 +27,14 @@ body{
     transition: 0.4s ease-in;
 }
 
-.container h1:hover{
+.container h1:hover {
     background: url(../images/dg-tran.jpeg) center no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     transition: 0.4s ease-out;
 }
 
-.container a{
+.container a {
     text-decoration: none;
     background: #e55019ae;
     color: #fff;
@@ -46,18 +46,18 @@ body{
     transition: 0.4s;
 }
 
-.container a:hover{
+.container a:hover {
     background: #e55039;
 }
 
-@media(max-width:550px){
-    .container h1{
+@media(max-width:550px) {
+    .container h1 {
         font-size: 80px;
     }
 }
 
-@media(max-width:320px){
-    .container h1{
+@media(max-width:320px) {
+    .container h1 {
         font-size: 60px;
     }
 }

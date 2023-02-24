@@ -1,41 +1,51 @@
   /* Style the pop-up */
   .popUp {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    transform: translate(-50%, -50%);
+    /* Center horizontally and vertically */
     padding: 20px;
     border: 2px solid #888;
-    border-radius: 10px; 
-    width: 450px; /* Width of the pop-up */
-    background-color: rgba(0,0,0,0.4); /* Black with opacity */
-    overflow: auto; /* Enable scroll if needed */
+    border-radius: 10px;
+    width: 450px;
+    /* Width of the pop-up */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+    overflow: auto;
+    /* Enable scroll if needed */
   }
-  
+
   /* Style the pop-up content */
   .popUp-content {
     background-color: rgb(233, 233, 233);
-    margin: 1% auto; /* 15% from the top and centered */
+    margin: 1% auto;
+    /* 15% from the top and centered */
     padding: 30px;
     border: 2px solid #888;
     border-radius: 5px;
-    width: 100%; /* 100% width */
+    width: 100%;
+    /* 100% width */
   }
 
-  .popUp-content p{
+  .popUp-content p {
     color: #333;
     font-family: 'Robot', cursive;
     cursor: pointer;
     transition: 0.2s linear;
-}
+  }
 
-.popUp-content p:hover, p:focus{
+  .popUp-content p:hover,
+  p:focus {
     color: rgb(214, 125, 52);
-}
+  }
 
-  
+
   /* Style the close button */
   .popUp-close {
     color: #929292;
@@ -43,7 +53,7 @@
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .popUp-close:hover,
   .popUp-close:focus {
     color: #333;
@@ -61,40 +71,40 @@
     background-color: #333;
     color: #fff;
     padding: 10px;
-}
+  }
 
-nav a {
+  nav a {
     color: #fff;
     text-decoration: none;
-}
+  }
 
-nav ul {
+  nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
-}
+  }
 
-nav li {
+  nav li {
     margin: 0 10px;
-}
+  }
 
-nav li a {
+  nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     padding: 10px;
     height: 50px;
-}
+  }
 
-nav li a i {
+  nav li a i {
     margin-right: 10px;
-}
+  }
 
-nav li a span {
+  nav li a span {
     display: none;
     position: absolute;
     top: 100%;
@@ -106,16 +116,16 @@ nav li a span {
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
-}
+  }
 
-nav li a:hover span {
+  nav li a:hover span {
     display: block;
-}
+  }
 
-footer .containers{
+  footer .containers {
     color: #dfdfdf;
-}
+  }
 
-footer .containers p{
+  footer .containers p {
     text-align: center;
-}
+  }

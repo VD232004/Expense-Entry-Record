@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/dg-tran.jpeg" type="gif/image">
-    <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/common.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <title>Contacts | DGroup's</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/dg-tran.jpeg" type="gif/image">
+  <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/common.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>Contacts | DGroup's</title>
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html">DGroup's</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a></li>
-        </ul>
-    </nav>
+  <nav>
+    <div class="logo">
+      <a href="index.html">DGroup's</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a></li>
+    </ul>
+  </nav>
 
-    <section class="contact">
-      <div class="contact-form">
-        <h1>Contact <span>Us</span></h1>
-        <form action="https://formspree.io/f/mrgvqkvv" method="POST"> 
-          <input type="text" placeholder="Your Name" name="Name" required>
-          <input type="email" placeholder="E-mail" id=""  name="E-mail" required>
-          <input name="Subject" type="text" placeholder="Write a Subject" required>
-          <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-      <br/>
-          <input type="submit" name="" id="" value="Submit" class="btn">
-        </form>
-      </div>
-      <div class="contact-img">
-        <img src="images/dg-tran.jpeg">
-      </div>
-    </section>
+  <section class="contact">
+    <div class="contact-form">
+      <h1>Contact <span>Us</span></h1>
+      <form action="https://formspree.io/f/mrgvqkvv" method="POST">
+        <input type="text" placeholder="Your Name" name="Name" required>
+        <input type="email" placeholder="E-mail" id="" name="E-mail" required>
+        <input name="Subject" type="text" placeholder="Write a Subject" required>
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <br />
+        <input type="submit" name="" id="" value="Submit" class="btn">
+      </form>
+    </div>
+    <div class="contact-img">
+      <img src="images/dg-tran.jpeg">
+    </div>
+  </section>
 
-    <footer>
-        <div class="containers">
-            <p>&copy; 2023 All rights reserved by DGroup's (Vipul Dalal)</p>
-        </div>
-    </footer>
-    <script>
-      window.onbeforeunload = () => {
-        for(const form of document.getElementsByTagName('form')) {
-          form.reset();
-        }
+  <footer>
+    <div class="containers">
+      <p>&copy; 2023 All rights reserved by DGroup's (Vipul Dalal)</p>
+    </div>
+  </footer>
+  <script>
+    window.onbeforeunload = () => {
+      for (const form of document.getElementsByTagName('form')) {
+        form.reset();
       }
-    </script>
+    }
+  </script>
 </body>
+
 </html>

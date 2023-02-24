@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     margin: 0 auto;
     width: 100%;
@@ -23,7 +23,7 @@ body{
     /* margin-top: 5%;*/
 }
 
-footer{
+footer {
     margin-top: 10.94%;
     width: 100%;
     background-color: #333;
@@ -61,7 +61,7 @@ select {
     background-size: 20px 20px;
 }
 
-.btns{
+.btns {
     display: flex;
     margin: 0 0 25px;
 }
@@ -78,7 +78,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-.btn-submit:not([disabled]):hover{
+.btn-submit:not([disabled]):hover {
     background-color: #4cce24;
     color: #333;
     font-weight: 400;
@@ -105,7 +105,7 @@ button[type="reset"] {
     cursor: pointer;
 }
 
-.btn-reset:hover{
+.btn-reset:hover {
     transition-delay: 0.05s;
     background-color: #ce2424;
     color: #fff;
@@ -114,14 +114,14 @@ button[type="reset"] {
 }
 
 
-.container header{
+.container header {
     font-size: 20px;
     font-weight: 600;
     color: #333;
     position: relative;
 }
 
-.container header::before{
+.container header::before {
     content: '';
     position: absolute;
     left: 0;
@@ -146,9 +146,9 @@ button.delete-button {
     border-radius: 4px;
     cursor: pointer;
 }
-  
+
 /* Style the button that opens the pop-up */
-.addbtn{
+.addbtn {
     position: relative;
     text-align: center;
     justify-content: center;
@@ -158,19 +158,19 @@ button.delete-button {
     border-radius: 5px;
     margin-left: 90%;
     border: none;
-	color: #2482ce;
-	background-color: rgba(0,0,0,0.7);
-	font-size: 30px;
+    color: #2482ce;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 30px;
     font-weight: 600;
-	text-decoration: none;
-	cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
     border: 1.5px solid #2482ce;
-	text-transform: uppercase;
+    text-transform: uppercase;
     transition: 0.5s ease-in;
-	transform: translate(15%, -20%);
+    transform: translate(15%, -20%);
 }
 
-.addbtn:hover{
+.addbtn:hover {
     background-color: #2482ce;
     color: #fff;
     font-weight: 600;
@@ -182,6 +182,7 @@ button.delete-button {
     font-size: 20px;
     /* margin-right: 10px; */
 }
+
 .addbtn span {
     display: none;
     position: absolute;
@@ -203,11 +204,11 @@ button.delete-button {
 
 /*========================================  */
 
-.container form .details{
+.container form .details {
     margin-top: 10px;
 }
 
-.container form .title{
+.container form .title {
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -218,7 +219,7 @@ button.delete-button {
     position: relative;
 }
 
-.container form .title::before{
+.container form .title::before {
     content: '';
     position: absolute;
     left: 13px;
@@ -229,32 +230,34 @@ button.delete-button {
     border-radius: 8px;
 }
 
-.container form .fields{
+.container form .fields {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px ;
+    padding: 0 20px;
     flex-wrap: wrap;
 }
 
-.container form .fields .input-fields{
+.container form .fields .input-fields {
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 4px 0;
 }
 
-.input-fields label{
+.input-fields label {
     font-size: 14px;
     font-weight: 600;
     color: #333;
-} 
+}
 
-.input-fields input, select, input[type=date]{
+.input-fields input,
+select,
+input[type=date] {
     height: 42px;
     outline: none;
     cursor: pointer;
-    border: 1px solid  #fe4567;
+    border: 1px solid #fe4567;
     border-radius: 5px;
     font-size: 14px;
     font-family: 400;
@@ -266,38 +269,51 @@ button.delete-button {
 }
 
 
-.input-fields input:invalid{
+.input-fields input:invalid {
     animation: shake 0.15s 3;
 }
 
-.input-fields input::placeholder, select::placeholder{
+.input-fields input::placeholder,
+select::placeholder {
     color: #fff;
 }
 
 @keyframes shake {
-    0%, 100%{ translate: 0; }
-    25%{ translate: 8px 0; }
-    75%{ translate: -8px 0; }
+
+    0%,
+    100% {
+        translate: 0;
+    }
+
+    25% {
+        translate: 8px 0;
+    }
+
+    75% {
+        translate: -8px 0;
+    }
 }
 
-.input-fields input:valid, select:valid{
+.input-fields input:valid,
+select:valid {
     border-color: #45feaf;
     animation: none;
 }
 
-.input-fields input:focus, select:focus{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+.input-fields input:focus,
+select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
 
-.input-fields #amount{
+.input-fields #amount {
     background: #aaa;
 }
 
-.input-fields #amount::placeholder{
+.input-fields #amount::placeholder {
     color: #fff;
 }
 
-.input-fields1{
+.input-fields1 {
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: row;
@@ -305,45 +321,49 @@ button.delete-button {
     margin: 4px 0;
 }
 
-.input-fields1 img{
+.input-fields1 img {
     width: 34px;
     height: 34px;
 }
 
-.box, .box1, .box2, .box3, .box4{
+.box,
+.box1,
+.box2,
+.box3,
+.box4 {
     display: none;
 }
 
-  /* Media Query */
+/* Media Query */
 
-  @media screen and (max-width: 768px) {
-    .container form{
-        overflow-y: scroll; 
+@media screen and (max-width: 768px) {
+    .container form {
+        overflow-y: scroll;
     }
 
-    .container form::-webkit-scrollbar{
+    .container form::-webkit-scrollbar {
         display: none;
     }
 
-    .container{
+    .container {
         margin-top: 12%;
     }
 
-    .container form .fields .input-fields{
+    .container form .fields .input-fields {
         width: calc(100% / 2 - 15px);
     }
 
-    .popUp{
+    .popUp {
         width: auto;
     }
-  }
+}
 
-  @media screen and (max-width:568px) {
-        .container form .fields .input-fields{
-            width: 100%;
-        }
+@media screen and (max-width:568px) {
+    .container form .fields .input-fields {
+        width: 100%;
+    }
 
-        .popUp{
-            width: auto;
-        }
-  }
+    .popUp {
+        width: auto;
+    }
+}

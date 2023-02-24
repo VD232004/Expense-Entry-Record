@@ -1,49 +1,50 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sains', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #191919;
 }
 
-.home{
+.home {
     width: 100%;
     padding: 78px 0px;
+    margin-top: 8%;
 }
 
-.home img{
+.home img {
     height: auto;
     width: 420px;
     border-radius: 15px;
     border: 2px solid transparent;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.home-text{
+.home-text {
     width: 850px;
 }
 
-.mainhome{
+.mainhome {
     width: 1330px;
     max-width: 95%;
     margin: 0 auto;
-    margin-bottom: 3.2%;
+    margin-bottom: -4.8%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.home-text h1{
+.home-text h1 {
     color: white;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
-.home-text h5{
+.home-text h5 {
     color: white;
     font-size: 25px;
     text-transform: capitalize;
@@ -51,15 +52,15 @@ body{
     letter-spacing: 2px;
 }
 
-span{
+span {
     color: #f9004d;
 }
 
-strong{
+strong {
     color: #f9004d;
 }
 
-.home-text p{
+.home-text p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
@@ -67,7 +68,7 @@ strong{
     margin-bottom: 45px;
 }
 
-a[type=button]{
+a[type=button] {
     background: #f9004d;
     color: white;
     text-decoration: none;
@@ -78,13 +79,13 @@ a[type=button]{
     transition: .4s ease-in-out;
 }
 
-a[type=button]:hover{
+a[type=button]:hover {
     background: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
 
-footer{
+footer {
     margin-top: 10.94%;
     width: 100%;
     background-color: #333;
@@ -92,83 +93,87 @@ footer{
 }
 
 /* Media Query */
-@media (max-width: 1024px){
-    .mainhome{
+@media (max-width: 1024px) {
+    .mainhome {
         display: flex;
         /* flex-direction: column; */
     }
-    
-    .home img{
+
+    .home img {
         height: auto;
         width: 420px;
     }
-    
-    .home-text{
+
+    .home-text {
         width: 425px;
         margin-top: 10%;
         margin-bottom: 3.3%;
     }
-    .home-text h1{
+
+    .home-text h1 {
         font-size: 70px;
     }
 }
 
-@media (max-width: 770px){
-    .mainhome{
+@media (max-width: 770px) {
+    .mainhome {
         display: flex;
         /* flex-direction: column; */
     }
-    
-    .home img{
+
+    .home img {
         height: auto;
         width: 320px;
     }
-    
-    .home-text{
+
+    .home-text {
         width: 325px;
         margin-top: 10%;
         margin-bottom: 10.5%;
     }
-    .home-text h1{
+
+    .home-text h1 {
         font-size: 60px;
     }
 }
 
-@media (max-width: 550px){
-    .mainhome{
+@media (max-width: 550px) {
+    .mainhome {
         display: flex;
         flex-direction: column;
     }
 
-    .home img{
+    .home img {
         height: auto;
         width: 320px;
     }
 
-    .home-text{
+    .home-text {
         width: 325px;
     }
-    .home-text h1{
+
+    .home-text h1 {
         margin-top: 35px;
         font-size: 50px;
     }
 }
 
-@media (max-width: 350px){
-    .mainhome{
+@media (max-width: 350px) {
+    .mainhome {
         display: flex;
         flex-direction: column;
     }
 
-    .home img{
+    .home img {
         height: auto;
         width: 210px;
     }
 
-    .home-text{
+    .home-text {
         width: 225px;
     }
-    .home-text h1{
+
+    .home-text h1 {
         margin-top: 30px;
         font-size: 40px;
     }
