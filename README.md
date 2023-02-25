@@ -8,7 +8,7 @@ It helps us to send data from web form to Google Sheets for free of cost and if 
 # Checkout Demo of my Web Form
 And I request you to don't submit this form after filling it. Because I am using this form personaly to manage my expenses.
 
-[Expenses Web-App](https://vd232004.github.io/Expenses-Record-Web-App/)
+[Expenses Web-App](https://vd232004.github.io/Expense-Entry-Record/)
 
 If you have any trouble with code then feel free to ask your doubts. 
 
