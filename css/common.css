@@ -45,6 +45,15 @@
     color: rgb(214, 125, 52);
   }
 
+  :root{
+    --font-family-Lato: 'Lato', sans-serif;
+    --font-family-Poppins: 'Poppins', sans-serif;
+    --font-family-Raleway: 'Raleway', sans-serif;
+    --font-family-Roboto: 'Roboto', sans-serif;
+    --font-family-Ubuntu: 'Ubuntu', sans-serif;
+    --font-family-Audiowide: 'Audiowide', cursive;
+}
+
 
   /* Style the close button */
   .popUp-close {
@@ -61,9 +70,6 @@
     cursor: pointer;
   }
 
-
-
-
   nav {
     display: flex;
     justify-content: space-between;
@@ -71,6 +77,22 @@
     background-color: #333;
     color: #fff;
     padding: 10px;
+  }
+
+  nav .logo {
+    margin-left: 30px;
+    font-size: 24px;
+  }
+
+  nav .logo a {
+    color: #fff;
+    font-family: var(--font-family-Audiowide);
+    transition: .5s ease-in-out;
+  }
+
+  nav .logo a:hover {
+    color: #f9004d;
+    transition: .5s ease-in-out;
   }
 
   nav a {
@@ -102,7 +124,12 @@
 
   nav li a i {
     margin-right: 10px;
+    transition: 0.5s ease-in-out;
   }
+
+  nav ul li:hover a i{
+    color: #f9004d;
+}
 
   nav li a span {
     display: none;
@@ -120,6 +147,7 @@
 
   nav li a:hover span {
     display: block;
+    font-weight: 600;
   }
 
   footer .containers {

@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --font-family-Lato: 'Lato', sans-serif;
+    --font-family-Poppins: 'Poppins', sans-serif;
+    --font-family-Raleway: 'Raleway', sans-serif;
+    --font-family-Roboto: 'Roboto', sans-serif;
+    --font-family-Ubuntu: 'Ubuntu', sans-serif;
+    --font-family-Audiowide: 'Audiowide', cursive;
+}
+
+
 body {
     background-color: #191919;
 }
@@ -29,7 +39,7 @@ body {
 
 .mainhome {
     width: 1330px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: -4.8%;
     display: flex;
@@ -39,9 +49,16 @@ body {
 
 .home-text h1 {
     color: white;
-    font-size: 80px;
+    font-family: var(--font-family-Audiowide);
+    font-size: 65px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.home-text h1:hover{
+    color: #f9004d;
+    cursor: pointer;
 }
 
 .home-text h5 {
@@ -58,6 +75,18 @@ span {
 
 strong {
     color: #f9004d;
+}
+
+.home-text .str1{
+    font-family: var(--font-family-Audiowide);
+    transition: .5s ease-in-out;
+}
+
+.home-text .str1:hover{
+    color: #fff;
+    text-decoration: overline underline;
+    text-rendering: auto;
+    cursor: pointer;
 }
 
 .home-text p {
