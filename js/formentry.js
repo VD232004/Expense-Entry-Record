@@ -459,39 +459,6 @@ window.onclick = function (event) {
   }
 }
 
-//Create multiple form
-
-function addForm() {
-    // Get the form container element
-    var container = document.getElementById("details");
-
-    // Get the form to copy
-    var formToCopy = document.querySelector('.fields');
-
-    // Clone the form and its contents
-    var clonedForm = formToCopy.cloneNode(true);
-
-    // Add a "delete" button to the cloned form
-    var deleteButton = document.createElement("button");
-    deleteButton.innerHTML = "Delete";
-    deleteButton.className = "delete-button";
-    deleteButton.setAttribute("onclick", "deleteForm(this)");
-    clonedForm.appendChild(deleteButton);
-
-    // Add a "Seperation line" to the cloned form
-    var line = document.createElement("span");
-    line.className = "sp-line";
-    clonedForm.appendChild(line);
-
-    // Add the cloned form to the container
-    container.appendChild(clonedForm);
-  }
-
-  function deleteForm(button) {
-    // Remove the parent element (the entire form)
-    button.parentNode.remove();
-  }
-
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById('myTopnav')
@@ -513,3 +480,24 @@ function myFunction() {
 //     window.location.href = 'https://example.com'
 //   }
 // })
+
+// Get form div and add form button
+const formDiv = document.querySelector('#details');
+const addFormBtn = document.getElementById('myButton');
+
+// Add event listener to add form button
+addFormBtn.addEventListener('click', addForm);
+
+function addForm() {
+  // Clone the form div
+  const newForm = formDiv.cloneNode(true);
+
+  // Add event listener to delete button
+  const deleteBtn = newForm.querySelector('.delete-btn');
+  deleteBtn.addEventListener('click', () => {
+    newForm.remove();
+  });
+
+  // Append new form to form container
+  document.body.appendChild(newForm);
+}
