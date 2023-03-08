@@ -437,7 +437,7 @@ function SubForm() {
 // Get the pop-up and button elements
 var popUp = document.getElementById('myPopUp')
 // To activate the popup un-comment it this "var button" line  
-// var button = document.getElementById('myButton')  
+var button = document.getElementById('myButton')  
 
 // Get the close button element
 var closeButton = document.getElementsByClassName('popUp-close')[0]
